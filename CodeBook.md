@@ -1,4 +1,4 @@
-This file explains transfornmations used in run_analysis script to manipulate the original data, describes the output data and variables there
+This file explains transfornmations used in run_analysis.R script to manipulate the original data, describes the output data and variables there
 The goal of the project is to create a tidy data set with average of each variable for each activity and each subject.
 We started with loading all needed data sets using read.table function. We merged two data sets (training and test) together using rbind() function
 We also merged Activity Labels and Subject ID associated with the data sets together using rbind() function.
@@ -8,6 +8,7 @@ From the first tidy data set we created a second tidy data set using group_by() 
 This tidy data set includes the average of each variable for each activity and each subject and is written into ave_mean_and_std.txt file as an output.
 
 The list of variables shown in the file:
+
 "subject"
 "activity"
 "tBodyAcc-mean()-X"
